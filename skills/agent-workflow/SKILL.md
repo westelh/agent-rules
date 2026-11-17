@@ -63,7 +63,7 @@ become outdated.
   blocks.
 - Set the status to one of the following, matching the stage of the work.
   - `Backlog`: something must still be decided before starting (the scope,
-    the acceptance criteria, or an approach that needs approval).
+    the acceptance criteria, or the approach).
   - `Todo`: nothing is left to decide, and the work can start from the
     description alone.
   - `In Progress`: being worked on.
@@ -122,15 +122,6 @@ When an issue comment asks you to act, such as approving an option, reply
 under that comment once the work is done, saying what you did and linking the
 PR. Linear's tools cannot add reactions, so the reply shows the request was
 handled. Write it once at the end, not while the work is in progress.
-
-## Approval Before Implementation
-
-When the repository's rules or the person who asked require the approach to be
-approved first, write the options you compared and your recommendation in one
-issue comment, then stop without creating a branch or changing files. The
-approval is a reply to that comment. Leave the wording and the diff to PR
-review. Stop the same way when a change turns out to need approval partway
-through.
 
 ## Branches
 
