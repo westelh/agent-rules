@@ -81,6 +81,10 @@ become outdated.
   description alone. Write the conclusion as the adopted option in one line
   and link to the decision record. Do not write the compared options or the
   reasoning in the description.
+- When you refer to an issue in an issue description, a document or a
+  comment, put the mention at the end of a sentence or in a list item of its
+  own, not in the middle of a sentence. Linear shows a mention as a chip with
+  the issue's title, which breaks up the sentence around it.
 - Hold the conversation that builds the agreement (questions, objections and
   approvals of options, and reasons for changing the approach) in the agent
   session, not in issue comments. Present the options you compared and your
