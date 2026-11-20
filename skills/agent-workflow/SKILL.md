@@ -32,8 +32,8 @@ Track work in Linear issues. Write in an issue only what will be needed for
 later decisions, and do not repeat what the PR or the git history shows.
 
 Write the history of a decision (the options compared, why the others were
-not taken, and the checks of assumptions and research results) in the issue
-instead of leaving it in an agent session. In the PR description, write only
+not taken, and the checks of assumptions and research results) in the issue's
+documents instead of leaving it only in an agent session. In the PR description, write only
 the explanation of the diff (what changed and how, why, and how the diff was
 checked). When unsure which one a text belongs to, ask whether it would change
 if the diff changed: if so, write it in the PR; if not, in the issue. Do not
@@ -79,19 +79,25 @@ become outdated.
 - Write the current agreement (Goal, Scope, acceptance criteria and
   conclusion) in the description, so the current state is clear from the
   description alone. Write the conclusion as the adopted option in one line
-  and link to the comment that approved it. Do not write the compared options
-  or the reasoning in the description.
-- Use comments for the conversation that builds the agreement (questions,
-  objections and approvals of options, and reasons for changing the
-  approach), and reflect the agreement in the description once reached. Do
-  not write progress, work logs, verification records or research results in
-  comments. When closing or pausing an issue without a PR, leave a short
-  comment with the reason, or where the work stopped (the branch).
+  and link to the decision record. Do not write the compared options or the
+  reasoning in the description.
+- Hold the conversation that builds the agreement (questions, objections and
+  approvals of options, and reasons for changing the approach) in the agent
+  session, not in issue comments. Present the options you compared and your
+  recommendation, then stop until the person who asked decides.
+- Once they decide, record the options compared, the adopted option and why,
+  who approved it, the date, and a link to the session (its ID when it has no
+  URL) in a decision record: a Linear document attached to the issue,
+  separate from the research document. Add later decisions on the same issue
+  to the same document. Then reflect the agreement in the description.
+- Do not write progress, work logs, verification records, research results or
+  decisions in comments. When closing or pausing an issue without a PR, leave
+  a short comment with the reason, or where the work stopped (the branch).
 - Write research results (facts gathered as material for a decision, with
   their sources or how to check them) in a Linear document attached to the
   issue, and add further research to the same document. Do not create a
   document when there are no research results. Do not comment on the
-  document; hold the discussion in the issue's comments.
+  document; hold the discussion in the agent session.
 - When the Goal changes, do not rewrite the description; create a new issue
   and relate it to the original one.
 - Write acceptance criteria that are checked before merging. Check a workflow
@@ -117,11 +123,6 @@ session ID from `CLAUDE_CODE_SESSION_ID`, so the work can be resumed with
 issue's Resources as a link titled `Claude Code: <summary> (<session-id>)`;
 otherwise post one comment with `Claude Code: <summary>` and
 `claude --resume <session-id>`. Skip this outside Claude Code.
-
-When an issue comment asks you to act, such as approving an option, reply
-under that comment once the work is done, saying what you did and linking the
-PR. Linear's tools cannot add reactions, so the reply shows the request was
-handled. Write it once at the end, not while the work is in progress.
 
 ## Branches
 
